@@ -1,0 +1,18 @@
+.pageHero { background: linear-gradient(135deg, var(--navy) 0%, var(--deep-blue) 100%); padding: 130px 0 80px; position: relative; }
+.wave { line-height: 0; } .wave svg { width: 100%; display: block; }
+.intro { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+.servicesList { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px; }
+.servicesList li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.875rem; color: var(--body-text); line-height: 1.4; }
+.imgCol {  }
+.img { width: 100%; height: 420px; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); }
+.missionSection { background: var(--grey-light); padding: 80px 0; }
+.missionGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.missionCard { background: var(--white); border-radius: var(--radius-md); padding: 36px 28px; text-align: center; box-shadow: var(--shadow-sm); }
+.missionCard h3 { font-size: 1.1rem; color: var(--navy); margin: 12px 0 10px; }
+.missionCard p { font-size: 0.9rem; color: var(--grey-text); line-height: 1.7; }
+.missionIcon { font-size: 2.4rem; margin-bottom: 4px; display: flex; justify-content: center; color: var(--green); }
+.story { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+.quoteBox { background: var(--navy); border-radius: var(--radius-md); padding: 24px 28px; margin-top: 20px; }
+.quoteText { font-size: 1.05rem; color: var(--green-light); font-style: italic; line-height: 1.6; margin-bottom: 8px; }
+.quoteAuthor { font-size: 0.8rem; color: rgba(255,255,255,0.6); font-family: var(--font-heading); }
+@media (max-width: 900px) { .intro, .story { grid-template-columns: 1fr; gap: 40px; } .servicesList { grid-template-columns: 1fr; } .missionGrid { grid-template-columns: 1fr; } .img { height: 280px; } }

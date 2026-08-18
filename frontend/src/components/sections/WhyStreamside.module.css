@@ -1,0 +1,15 @@
+.section { background: linear-gradient(135deg, var(--navy) 0%, var(--deep-blue) 100%); padding: 90px 0; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+.eyebrow { display: inline-block; font-family: var(--font-heading); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--green-light); margin-bottom: 12px; }
+.title { font-size: clamp(1.8rem, 3vw, 2.4rem); color: #fff; margin-bottom: 16px; }
+.desc { color: rgba(255,255,255,0.72); line-height: 1.75; margin-bottom: 36px; }
+.pillars { display: flex; flex-direction: column; gap: 20px; }
+.pillar { display: flex; align-items: flex-start; gap: 16px; }
+.pillarIcon { font-size: 1.6rem; width: 48px; height: 48px; background: rgba(255,255,255,0.08); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.pillarTitle { font-family: var(--font-heading); font-weight: 700; font-size: 0.95rem; color: #fff; margin-bottom: 3px; }
+.pillarDesc { font-size: 0.85rem; color: rgba(255,255,255,0.6); line-height: 1.5; }
+.right { display: flex; flex-direction: column; gap: 16px; }
+.badge { font-family: var(--font-heading); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--green-light); }
+.img { width: 100%; height: 320px; object-fit: cover; border-radius: var(--radius-md); box-shadow: var(--shadow-xl); }
+.caption { font-size: 0.88rem; color: rgba(255,255,255,0.6); line-height: 1.6; }
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; gap: 48px; } }

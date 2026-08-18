@@ -1,0 +1,9 @@
+.bar { padding: 50px 0; background: var(--grey-light); border-bottom: 1px solid var(--grey-mid); }
+.grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; text-align: center; }
+.item { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 24px 12px; border-radius: var(--radius-md); background: var(--white); box-shadow: var(--shadow-sm); transition: transform var(--transition), box-shadow var(--transition); }
+.item:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.icon { width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; background: var(--green-bg); border-radius: 50%; margin-bottom: 4px; color: var(--green); }
+.title { font-family: var(--font-heading); font-weight: 700; font-size: 0.9rem; color: var(--navy); letter-spacing: 0.02em; text-transform: uppercase; }
+.desc { font-size: 0.82rem; color: var(--grey-text); line-height: 1.4; }
+@media (max-width: 900px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 600px) { .grid { grid-template-columns: repeat(2, 1fr); } .item:last-child { grid-column: 1 / -1; max-width: 200px; margin: 0 auto; } }

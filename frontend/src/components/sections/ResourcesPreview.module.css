@@ -1,0 +1,21 @@
+.section { background: var(--grey-light); }
+.header { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: flex-start; margin-bottom: 44px; }
+.featured { background: var(--white); border-radius: var(--radius-md); box-shadow: var(--shadow-md); overflow: hidden; display: flex; align-items: center; gap: 0; max-width: 340px; }
+.featuredBadge { position: absolute; top: 10px; left: 10px; background: var(--green); color: #fff; font-family: var(--font-heading); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.1em; padding: 3px 8px; border-radius: 4px; }
+.featuredImg { width: 100px; height: 120px; object-fit: cover; flex-shrink: 0; }
+.featuredText { padding: 16px; }
+.featuredText h4 { font-size: 0.9rem; color: var(--navy); line-height: 1.3; margin-bottom: 6px; }
+.featuredText p { font-size: 0.78rem; color: var(--grey-text); line-height: 1.5; }
+.featured { position: relative; }
+
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.card { background: var(--white); border-radius: var(--radius-md); padding: 24px 20px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; gap: 12px; transition: all var(--transition); text-decoration: none; border-bottom: 3px solid transparent; }
+.card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-bottom-color: var(--green); }
+.cardIcon { width: 44px; height: 44px; background: var(--green-bg); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--green); }
+.cardTitle { font-family: var(--font-heading); font-weight: 700; font-size: 0.9rem; color: var(--navy); margin-bottom: 4px; line-height: 1.3; }
+.cardDesc { font-size: 0.82rem; color: var(--grey-text); line-height: 1.5; }
+.cardLink { display: flex; align-items: center; gap: 4px; font-family: var(--font-heading); font-size: 0.78rem; font-weight: 700; color: var(--green); margin-top: 8px; }
+
+@media (max-width: 1100px) { .header { grid-template-columns: 1fr; } .featured { max-width: 100%; } }
+@media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 540px) { .grid { grid-template-columns: 1fr; } }

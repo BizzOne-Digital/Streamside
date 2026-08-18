@@ -1,0 +1,18 @@
+.page { min-height: 100vh; background: linear-gradient(135deg, var(--navy) 0%, var(--deep-blue) 60%, rgba(47,133,90,0.4) 100%); display: flex; align-items: center; justify-content: center; padding: 24px; }
+.card { background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); padding: 48px 44px; width: 100%; max-width: 420px; }
+.header { text-align: center; margin-bottom: 32px; }
+.logo { display: flex; gap: 3px; align-items: flex-end; justify-content: center; height: 36px; margin-bottom: 16px; }
+.bar { width: 7px; border-radius: 3px; }
+.title { font-size: 1.5rem; color: var(--navy); margin-bottom: 6px; }
+.subtitle { font-size: 0.875rem; color: var(--grey-text); }
+.error { display: flex; align-items: center; gap: 8px; background: #FFF5F5; border: 1px solid #FC8181; color: #E53E3E; padding: 11px 14px; border-radius: var(--radius-sm); font-size: 0.875rem; margin-bottom: 20px; }
+.form { display: flex; flex-direction: column; }
+.inputWrap { position: relative; }
+.inputIcon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--grey-text); pointer-events: none; }
+.input { padding-left: 42px !important; }
+.eyeBtn { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--grey-text); cursor: pointer; padding: 4px; }
+.submitBtn { width: 100%; justify-content: center; margin-top: 8px; }
+.back { text-align: center; margin-top: 20px; font-size: 0.85rem; }
+.back a { color: var(--grey-text); transition: color var(--transition); }
+.back a:hover { color: var(--green); }
+@media (max-width: 480px) { .card { padding: 36px 24px; } }

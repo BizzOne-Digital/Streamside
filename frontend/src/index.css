@@ -1,0 +1,156 @@
+/* ============================================
+   STREAMSIDE BOOKKEEPING — GLOBAL STYLES
+   ============================================ */
+
+/* Google Fonts loaded in index.html */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+/* ---- CSS Variables ---- */
+:root {
+  --navy: #1F3A5F;
+  --deep-blue: #2C5282;
+  --green: #2F855A;
+  --green-light: #68D391;
+  --green-bg: #F0FFF4;
+  --white: #FFFFFF;
+  --grey-light: #F7FAFC;
+  --grey-mid: #E2E8F0;
+  --grey-text: #718096;
+  --body-text: #2D3748;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 1px 4px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.12);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.15);
+  --shadow-xl: 0 16px 56px rgba(0,0,0,0.18);
+  --transition: 0.2s ease;
+}
+
+/* ---- Reset ---- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--body-text);
+  background: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; }
+a { text-decoration: none; color: inherit; }
+ul, ol { list-style: none; }
+button { font-family: inherit; cursor: pointer; }
+input, select, textarea { font-family: inherit; }
+h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); font-weight: 700; line-height: 1.2; }
+
+/* ---- Container ---- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---- Sections ---- */
+.section { padding: 90px 0; }
+
+/* ---- Typography helpers ---- */
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 10px;
+}
+.section-title {
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  color: var(--navy);
+  margin-bottom: 14px;
+}
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--grey-text);
+  line-height: 1.75;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.text-center { text-align: center; }
+.text-center .section-subtitle { margin: 0 auto; }
+
+/* ---- Buttons ---- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.01em;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition);
+  white-space: nowrap;
+  text-decoration: none;
+}
+.btn-primary {
+  background: var(--green);
+  color: #fff;
+  border-color: var(--green);
+}
+.btn-primary:hover { background: #276749; border-color: #276749; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(47,133,90,0.35); }
+.btn-outline {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255,255,255,0.7);
+}
+.btn-outline:hover { background: rgba(255,255,255,0.1); border-color: #fff; }
+.btn-outline-dark {
+  background: transparent;
+  color: var(--navy);
+  border-color: var(--grey-mid);
+}
+.btn-outline-dark:hover { border-color: var(--navy); background: var(--grey-light); }
+.btn-sm { padding: 8px 16px; font-size: 0.8rem; }
+.btn-lg { padding: 14px 32px; font-size: 0.95rem; }
+
+/* ---- Forms ---- */
+.form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+.form-label {
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--body-text);
+  letter-spacing: 0.04em;
+}
+.form-input {
+  padding: 11px 14px;
+  border: 1.5px solid var(--grey-mid);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: var(--body-text);
+  background: var(--white);
+  transition: border-color var(--transition), box-shadow var(--transition);
+  width: 100%;
+}
+.form-input:focus {
+  outline: none;
+  border-color: var(--green);
+  box-shadow: 0 0 0 3px rgba(47,133,90,0.12);
+}
+.form-input::placeholder { color: #A0AEC0; }
+select.form-input { cursor: pointer; }
+.form-error { font-size: 0.78rem; color: #E53E3E; font-family: var(--font-heading); font-weight: 600; }
+
+/* ---- Scrollbar ---- */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--grey-light); }
+::-webkit-scrollbar-thumb { background: var(--grey-mid); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--grey-text); }

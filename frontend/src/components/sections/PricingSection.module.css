@@ -1,0 +1,87 @@
+.section { background: var(--grey-light); }
+.plansGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 40px; }
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 32px 28px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  border: 2px solid transparent;
+  position: relative;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+.featured {
+  border-color: var(--green);
+  box-shadow: 0 8px 30px rgba(47,133,90,0.18);
+  transform: translateY(-6px);
+}
+.featured:hover { transform: translateY(-10px); }
+
+.badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--green);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 5px 14px;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+
+.cardHeader { margin-bottom: 20px; }
+.name { font-size: 1.3rem; color: var(--navy); margin-bottom: 6px; }
+.tagline { font-size: 0.875rem; color: var(--grey-text); line-height: 1.5; }
+
+.price { margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px solid var(--grey-mid); }
+.priceNum { font-family: var(--font-heading); font-size: 2.4rem; font-weight: 800; color: var(--navy); display: block; line-height: 1; }
+.priceNote { font-size: 0.78rem; color: var(--grey-text); display: block; margin-top: 4px; }
+
+.features { list-style: none; display: flex; flex-direction: column; gap: 10px; flex: 1; margin-bottom: 28px; }
+.features li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.875rem; color: var(--body-text); line-height: 1.4; }
+.check { color: var(--green); flex-shrink: 0; margin-top: 2px; }
+
+.cta { justify-content: center; width: 100%; }
+
+/* Rescue */
+.rescueCard {
+  background: var(--navy);
+  border-radius: var(--radius-md);
+  padding: 40px 48px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 48px;
+  align-items: center;
+}
+.rescueBadge {
+  display: inline-block;
+  background: rgba(47,133,90,0.3);
+  color: #9AE6B4;
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  padding: 4px 12px;
+  border-radius: 50px;
+  margin-bottom: 12px;
+}
+.rescueTitle { font-size: 1.35rem; color: #fff; margin-bottom: 14px; line-height: 1.3; }
+.rescueDesc { font-size: 0.9rem; color: rgba(255,255,255,0.7); line-height: 1.7; max-width: 540px; }
+.rescueRight { text-align: center; flex-shrink: 0; }
+.rescuePriceNum { font-family: var(--font-heading); font-size: 2.6rem; font-weight: 800; color: var(--green-light); line-height: 1; }
+.rescuePriceNote { font-size: 0.82rem; color: rgba(255,255,255,0.6); margin: 4px 0 6px; }
+.rescueCredit { font-size: 0.75rem; color: rgba(255,255,255,0.5); margin-bottom: 20px; font-style: italic; }
+
+@media (max-width: 1024px) { .plansGrid { grid-template-columns: 1fr 1fr; } .featured { transform: none; } }
+@media (max-width: 768px) {
+  .plansGrid { grid-template-columns: 1fr; }
+  .rescueCard { grid-template-columns: 1fr; gap: 28px; padding: 32px 24px; text-align: center; }
+  .rescueDesc { margin: 0 auto; }
+}
