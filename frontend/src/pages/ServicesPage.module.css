@@ -2,7 +2,7 @@
 .wave { line-height: 0; } .wave svg { width: 100%; display: block; }
 .loading { text-align: center; padding: 60px; color: var(--grey-text); font-size: 1.1rem; }
 .plansGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-bottom: 48px; }
-.card { background: var(--white); border-radius: var(--radius-md); padding: 36px 28px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; border: 2px solid transparent; position: relative; transition: transform var(--transition), box-shadow var(--transition); }
+.card { background: var(--white); border-radius: var(--radius-md); padding: 36px 28px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; border: 2px solid transparent; position: relative; transition: transform var(--transition), box-shadow var(--transition); min-width: 0; }
 .card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
 .featured { border-color: var(--green); box-shadow: 0 8px 32px rgba(47,133,90,0.2); }
 .badge { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: var(--green); color: #fff; font-family: var(--font-heading); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em; padding: 4px 14px; border-radius: 50px; white-space: nowrap; }
@@ -20,7 +20,8 @@
 .check { color: var(--green); flex-shrink: 0; margin-top: 2px; }
 .cta { justify-content: center; width: 100%; }
 .rescueSection { background: var(--navy); border-radius: var(--radius-lg); padding: 48px; margin-bottom: 48px; }
-.rescueInner { display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: center; }
+.rescueInner { display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: center; min-width: 0; }
+.rescueInner > * { min-width: 0; }
 .rescueBadge { display: inline-block; background: rgba(47,133,90,0.3); color: #9AE6B4; font-family: var(--font-heading); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.12em; padding: 4px 12px; border-radius: 50px; margin-bottom: 14px; }
 .rescueTitle { font-size: 1.5rem; color: #fff; margin-bottom: 14px; }
 .rescueDesc { color: rgba(255,255,255,0.72); font-size: 0.9rem; line-height: 1.7; }
