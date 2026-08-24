@@ -60,6 +60,10 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); font-weight: 700; line-hei
 
 /* ---- Sections ---- */
 .section { padding: 90px 0; }
+@media (max-width: 640px) {
+  .section { padding: 56px 0; }
+  .container { padding: 0 18px; }
+}
 
 /* ---- Typography helpers ---- */
 .eyebrow {

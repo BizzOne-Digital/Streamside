@@ -21,3 +21,4 @@
 .point { display: flex; align-items: flex-start; gap: 10px; font-size: 0.95rem; color: var(--body-text); line-height: 1.5; }
 .check { color: var(--green); flex-shrink: 0; margin-top: 2px; }
 @media (max-width: 900px) { .grid { grid-template-columns: 1fr; gap: 48px; } .imgWrap { order: -1; } .badge { right: 20px; bottom: -16px; } }
+@media (max-width: 600px) { .img { height: 280px; } .badge { padding: 14px 18px; min-width: 110px; } .badgeNum { font-size: 1.7rem; } }
