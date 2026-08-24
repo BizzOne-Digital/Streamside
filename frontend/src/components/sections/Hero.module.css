@@ -180,7 +180,8 @@
 }
 @media (max-width: 640px) {
   .headline { font-size: 2rem; }
-  .content { padding-bottom: 80px; }
+  .content { padding-top: 32px; padding-bottom: 80px; }
+  .badge { margin-top: 16px; }
   .actions { flex-direction: column; }
   .actions .btn { width: 100%; justify-content: center; }
 }

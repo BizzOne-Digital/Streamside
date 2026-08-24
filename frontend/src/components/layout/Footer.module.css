@@ -5,8 +5,8 @@
 .grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.4fr; gap: 48px; }
 
 .brand {}
-.logo { display: flex; align-items: center; margin-bottom: 16px; }
-.logoImg { height: 44px; width: auto; filter: brightness(0) invert(1); }
+.logo { display: inline-flex; align-items: center; margin-bottom: 16px; background: #fff; padding: 10px 16px; border-radius: var(--radius-sm); }
+.logoImg { height: 44px; width: auto; }
 .tagline { font-size: 0.875rem; line-height: 1.7; color: rgba(255,255,255,0.6); margin-bottom: 20px; }
 .social { display: flex; gap: 10px; }
 .social a {
