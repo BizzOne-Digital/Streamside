@@ -5,10 +5,8 @@
 .grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.4fr; gap: 48px; }
 
 .brand {}
-.logo { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
-.logoName { font-family: var(--font-heading); font-size: 1rem; font-weight: 400; color: #fff; letter-spacing: 0.06em; }
-.logoName b { font-weight: 800; }
-.logoSub { font-family: var(--font-heading); font-size: 0.55rem; font-weight: 700; letter-spacing: 0.18em; color: rgba(255,255,255,0.5); }
+.logo { display: flex; align-items: center; margin-bottom: 16px; }
+.logoImg { height: 44px; width: auto; filter: brightness(0) invert(1); }
 .tagline { font-size: 0.875rem; line-height: 1.7; color: rgba(255,255,255,0.6); margin-bottom: 20px; }
 .social { display: flex; gap: 10px; }
 .social a {

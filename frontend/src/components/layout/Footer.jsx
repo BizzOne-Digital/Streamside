@@ -17,17 +17,7 @@ export default function Footer() {
             {/* Brand */}
             <div className={styles.brand}>
               <div className={styles.logo}>
-                <svg width="40" height="40" viewBox="0 0 44 44" fill="none">
-                  <rect x="2" y="26" width="7" height="16" rx="2" fill="#90CDF4"/>
-                  <rect x="11" y="18" width="7" height="24" rx="2" fill="#63B3ED"/>
-                  <rect x="20" y="22" width="7" height="20" rx="2" fill="#A0AEC0"/>
-                  <rect x="29" y="14" width="7" height="28" rx="2" fill="#68D391"/>
-                  <rect x="38" y="8" width="4" height="34" rx="2" fill="#48BB78"/>
-                </svg>
-                <div>
-                  <div className={styles.logoName}><b>STREAM</b>SIDE</div>
-                  <div className={styles.logoSub}>BOOKKEEPING</div>
-                </div>
+                <img src="/logo.png" alt="Streamside Bookkeeping" className={styles.logoImg} />
               </div>
               <p className={styles.tagline}>Professional. Reliable. Organized.<br />Bookkeeping that keeps your business moving forward.</p>
               <div className={styles.social}>
