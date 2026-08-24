@@ -25,18 +25,7 @@ export default function Navbar() {
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.inner}`}>
         <Link to="/" className={styles.logo}>
-          <svg className={styles.logoIcon} width="40" height="40" viewBox="0 0 44 44" fill="none">
-            <rect x="2" y="26" width="7" height="16" rx="2" fill="#90CDF4"/>
-            <rect x="11" y="18" width="7" height="24" rx="2" fill="#63B3ED"/>
-            <rect x="20" y="22" width="7" height="20" rx="2" fill="#A0AEC0"/>
-            <rect x="29" y="14" width="7" height="28" rx="2" fill="#68D391"/>
-            <rect x="38" y="8" width="4" height="34" rx="2" fill="#48BB78"/>
-          </svg>
-          <div className={styles.logoText}>
-            <span className={styles.logoName}><b>STREAM</b>SIDE</span>
-            <span className={styles.logoSub}>BOOKKEEPING</span>
-            <span className={styles.logoTag}>Grow with the Flow</span>
-          </div>
+          <img src="/logo.png" alt="Streamside Bookkeeping" className={styles.logoImg} />
         </Link>
         <nav className={styles.nav}>
           {navLinks.map(({ to, label, end }) => (
